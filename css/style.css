@@ -1,0 +1,253 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+    mix-blend-mode: difference;
+    background-position: center;
+    background-size: cover;
+    transition: background-image ease 0.5s;
+}
+.purple{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: rgb(243, 185, 243);
+    z-index: 999;
+    opacity: 0;
+    display: none;
+}
+.main{
+    background-color: #0f0d0d;
+    cursor: none;
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 10vw;
+}
+.nav{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 9999;
+}
+.nav image{
+    height: 26px;
+}
+
+.nav_part2{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+}
+
+.nav .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.nav h4{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.nav h4:nth-child(1) {
+    text-decoration: underline;
+}
+.page1 h1{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: PP Mori;
+    margin-left: 6vw;
+}
+.page1 h2{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: PP Mori;
+    margin-left: 26vw;
+}
+
+.page1 video{
+   width: 60%;
+   margin-top: 10vw;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+
+.page2{
+    min-height: 95vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #9b9a9a;
+    position: relative;
+    z-index: 9;
+}
+.page2 h1{
+    font-size: 7vw;
+    font-weight: 300;
+    font-family: pp Mori;
+    color: #111;
+}
+.page2-content{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #111;
+}
+.page2_left{
+    width: 38%;
+}
+.page2-right{
+    width: 24%;
+}
+.page2-right p{
+    font-size: 20px;
+    color: #111;
+    font-family: pp mori;
+}
+.page2_left h2{
+    font-size: 4vw;
+    font-weight: 200;
+    font-family: pp mori;
+    color: #111;
+}
+.page2-right button{
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 4px 0;
+    color: #111;
+    margin-top: 20PX;
+    background-color: #EDBFFF;
+}
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    z-index: 9;
+}
+.page3 h1{
+   font-size: 6.5vw;
+   color: #111;
+   font-weight: 300;
+   font-family: pp mori;
+   margin-left: 100px;
+}
+.page3_part1 img {
+    width: 37%;
+    margin-top: 160px;
+}
+.page3_part1 video {
+    width: 38%;
+}
+.page3_part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page4{
+    min-height: 110vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 140px 100px;
+}
+.elem {
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.elem h1{
+    font-size: 7.3vw;
+    font-family: pp Mori;
+    font-weight: 500;
+    transition: all ease-out 0.3s;
+}
+.elem img {
+    width: 23%;
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.3s;
+    transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1) {
+    width: 25%;
+    left: 2%;
+}
+.elem img:nth-child(3) {
+    right: 7%;
+}
+.elem:hover h1{
+   transform: translateY(-100%);
+   color: #d47bf7;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+.text_div{
+    /* background-color: lightblue; */
+    height: 100px;
+    overflow: hidden;
+}
+.page5{
+    min-height: 140vh;
+    width: 100%;
+    background-color: #0f0d0d;
+    position: relative;
+    z-index: 9;
+    padding: 80px 100px;
+    margin-bottom: 50px;
+}
+
+.page5 h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 0 20px;
+    border-top: 1.5px solid #dadada;
+}
+.box:nth-last-child(1) {
+    border-bottom: 1.5px solid #dadada;
+}
